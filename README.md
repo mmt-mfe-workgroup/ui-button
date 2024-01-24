@@ -29,7 +29,7 @@ const App = () => {
   const myHandler = () => console.log("Dispatch CustomEvent")
   return (
     <Suspense fallback={<div>Loading...</div>}>
-      <Component label="Click me" onClick={myHandler}>
+      <Component label="Click me" onClick={myHandler} />
     </Suspense>
   )
 }
