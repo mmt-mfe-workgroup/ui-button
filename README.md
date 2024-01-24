@@ -3,6 +3,7 @@
 Shared UI resource for MFE workgroup "Zain's Phones"
 
 CDN_LOCATION: `rude-clouds.surge.sh`
+
 FRAMEWORK: `react@18.2`
 
 ## Usage
