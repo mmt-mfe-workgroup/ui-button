@@ -7,9 +7,9 @@ const mfe = () => federation({
     name: 'ui-button',
     filename: 'remoteEntry.js',
     exposes: {
-        './App': './src/RemoteApp',
+        './Button': './src/components/Button',
     },
-    shared: ['react', 'react-dom']
+    shared: ['react']
 })
 
 // https://vitejs.dev/config/
