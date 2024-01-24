@@ -19,7 +19,15 @@ remotes: {
 Import the Component into your React application lazily as follows:
 
 ```
-const Component = () => import("UI/Button");
-```
+import React, { lazy, Suspense } from 'react';
+const Component = lazy(() => import("UI/Button"));
 
-TBC => how to access the module!
+const App = () => {
+  const myHandler = () => console.log("Dispatch CustomEvent")
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <Component label="Click me" onClick={myHandler}>
+    </Suspense>
+  )
+}
+```
