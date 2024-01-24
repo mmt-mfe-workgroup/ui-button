@@ -6,7 +6,6 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 const mfe = () => federation({
     name: 'ui-button',
     filename: 'remoteEntry.js',
-    // Modules to expose
     exposes: {
         './App': './src/RemoteApp',
     },
