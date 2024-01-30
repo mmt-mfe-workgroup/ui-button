@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "config": {
-    "cdn": "rude-clouds.surge.sh"
+    "cdn": "useless-distribution.surge.sh"
   },
   "scripts": {
     "dev": "vite",
